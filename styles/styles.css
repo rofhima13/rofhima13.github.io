@@ -1,0 +1,17 @@
+body {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.stack-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.stack-list li p a {
+    color: yellow;
+}
