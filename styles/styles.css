@@ -1,5 +1,11 @@
+html, body {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    font-family: "Roboto Slab", serif;
+    font-family: "Ubuntu", sans-serif;
     margin: 0;
 }
 
@@ -12,6 +18,22 @@ body {
     padding-left: 0;
 }
 
+.stack-list li div {
+    height: 100%;
+}
+
 .stack-list li p a {
     color: yellow;
+}
+
+.profile-pic {
+    height: 200px;
+}
+
+.contact-info p a {
+    color: gold;
+}
+
+.bg-primary {
+    background-color: red;
 }

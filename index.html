@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rofhiwa Matumba - Resume</title>
+        <title>Rofhiwa Matumba - Portfolio Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');</style>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');</style>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <div class="bg-warning p-5 sticky-top">This page is still under construction!</div>
-        <div class="d-flex p-5 bg-dark text-white">
-            <div class="container-fluid">
+        <div class="d-flex p-5 bg-dark text-white row align-items-center">
+            <div class="container-fluid col-md-3 d-flex justify-content-center p-3">
+                <img class="profile-pic rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D03AQF7bCNzL6b8mQ/profile-displayphoto-shrink_800_800/0/1659390637313?e=1672876800&v=beta&t=kLiWRBcMZzxhoaLQkqtEbc2I0zxVnTZ73qZnyNceCfE">
+            </div>
+            <div class="container-fluid col-md-5 p-3">
                 <h1>Rofhiwa Matumba</h1>
-                <h2>Computer Science student</h2>
+                <h2 class="text-muted">Computer Science Student</h2>
             </div>
-            <div class="container-fluid">
-                <p>email</p>
-                <p>cell</p>
-                <p>LinkedIn</p>
-                <p>Instagram</p>
+            <div class="container-fluid col-md-4 p-3 contact-info">
+                <p>Email: <a href="mailto:rofhima13@gmail.com">rofhima13@gmail.com</a></p>
+                <p>Cell: <a href="tel:+27 72 974 5676">+27 72 974 5676</a><p>
+                <p>LinkedIn: <a href="http://www.linkedin.com/rofhima13">@rofhima13</a></p>
+                <p>Instagram: <a href="http://instagram.com/rofhima13">@rofhima13</a></p>
             </div>
         </div>
-        <div class="container-fluid p-3 bg-light">
-            <h1>About me</h1>
-            <p>I am an aspiring software engineer who is currently in the process of completing a BSc Computer
-                Science degree at the University of the Western Cape. I intend to further my studies in artificial
-                intelligence, and start my own AI software business in the future.</p>
+        <div class="bg-info p-3"><strong>This is a less formal version of my resume. If you're an employer, please feel free to <a class="link-dark" href="https://drive.google.com/file/d/1kKIdfW_KNS-CrjIxtHlRJCC8Yx7MGc6o/view?usp=sharing">download</a> the summarised PDF version with references.</strong></div>
+        <div class="row">
+            <div class="p-4 bg-light col-md-6">
+                <h1>About me</h1>
+                <p>I am an aspiring software engineer who is currently in the process of completing a BSc Computer
+                    Science degree at the University of the Western Cape. I intend to further my studies in artificial
+                    intelligence, and start my own AI software business in the future.</p>
+            </div>
+            <div class="p-4 bg-dark text-light col-md-6">
+                <h1>Skills</h1>
+                <ul>
+                    <li>Computer programming (detailed information below)</li>
+                    <li>Intermediate knowledge of classical (Newtonian) physics</li>
+                    <li>High performance computing with Linux</li>
+                    <li>Scientific report writing</li>
+                    <li>Basic knowledge of astronomy, quantum, and computational physics</li>
+                    <li>Comfortable using all major operating systems - Windows, macOS and Linux (UNIX)</li>
+                </ul>
+            </div>
         </div>
-        <div class="container-fluid p-3 bg-dark text-light">
-            <h1>Skills</h1>
-            <ul>
-                <li>Computer programming (detailed information below)</li>
-                <li>Intermediate knowledge of classical (Newtonian) physics</li>
-                <li>High performance computing with Linux</li>
-                <li>Scientific report writing</li>
-                <li>Basic knowledge of astronomy, quantum, and computational physics</li>
-                <li>Comfortable using all major operating systems - Windows, macOS and Linux (UNIX)</li>
-
-            </ul>
-        </div>
+        <hr>
         <div class="container-fluid p-3 bg-light">
             <h1>Education</h1>
 
@@ -55,7 +60,7 @@
             <h3>Accolades</h3>
             <ul>
                 <li>CHPC Student Cluster Competion finalist (2020)</li>
-                <li>CHPC Student Cluster Competition winner (2021)</li>
+                <li>CHPC Student Cluster Competition winner (2021) <a href="https://eresearch.uwc.ac.za/2022/04/25/uwc-team-wins-cluster-challenge/?utm_source=rss&utm_medium=rss&utm_campaign=uwc-team-wins-cluster-challenge">[Source]</a></li>
                 <li>ISC Student Cluster Competion Participant (2022)</li>
                 <li>Google Solution Challenge Participant (2022)</li>
             </ul>
@@ -65,46 +70,54 @@
             <p>I have a strong interest in computer programming, physics, and reading non-fiction books. I
                 am either auditing an online course or scouring the Stack Exchange forums in my free time.</p>
         </div>
-        <p class="container-fluid my-auto p-3 bg-warning"><strong>Are you an employer? Feel free to download the summarised PDF version with references.)</strong></p>
         <div class="container-fluid p-3 bg-dark text-light">
             <h1>Software and Tools</h1>
+            <p>The skills I practice using the technologies listed below include but are not limited to:</p>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Artificial Intelligence</li>
+                <li>Web Development</li>
+                <li>Computer Networking</li>
+                <li>Database Design</li>
+                <li>Software Engineering</li>
+            </ul>
+            <p>This list will grow over time as I adopt more skills and learn different languages.</p>
             <h2>Development</h2>
-            <ul class="stack-list text-light">
-                <li>
+            <ul class="stack-list text-light row">
+                <li class="col-md-6">
                     <div class="d-flex row p-3 bg-secondary">
                         <img src="https://assets-global.website-files.com/625675d200672ae1d1c57482/6274fe5247f2428d132d6806_6273e496da4fa6ddf86864b2_logo-anaconda-372x372-1.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>Anaconda (Python)</h1>
-                            <p>I prefer using an Anaconda distribution as it comes prepackaged with most of the data science tools I need to get started. Among these are NumPy, Pandas, Scikit-learn, and Spyder IDE.
-                                It also allows me to containerise any application where I need to use them and install additional libraries specific to one project.</p>
-                            <p>Website <a href="http://www.anaconda.com/">here</a>:</p>
+                            <p>I prefer using an Anaconda distribution as it comes prepackaged with most of the data science tools I need to get started on writing data processing algorithms. Among these are NumPy, Pandas, Scikit-learn, and Spyder IDE.</p>
+                            <p>Website <a href="http://www.anaconda.com/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="col-md-6">
                     <div class="d-flex row p-3 bg-dark">
                         <img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.svg" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>Django (Python)</h1>
-                            <p>I use Django for backend development with Python because it enables me to leverage the benefits of Anaconda while working with it.</p>
-                            <p>Website <a href="http://www.djangoproject.com/">here</a>:</p>
+                            <p>I use Django for backend development because it enables me to write stable web code in Python, which is my language of preference and choice in most applications.</p>
+                            <p>Website <a href="http://www.djangoproject.com/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex row p-3 bg-secondary">
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-primary">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>Bootstrap</h1>
                             <p>I use Bootstrap to save myself the time of writing often unnecessary lines of CSS, and allows me to write HTML all the while having a good idea of
                                 what the final product may look like. (This resume was built using Bootstrap!)
                             </p>
-                            <p>Website <a href="http://www.getbootstrap.com/">here</a>:</p>
+                            <p>Website <a href="http://www.getbootstrap.com/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex row p-3 bg-dark">
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-secondary">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>C, C++</h1>
@@ -112,38 +125,38 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex row p-3 bg-secondary">
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-dark">
                         <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
-                            <h1>Git and GitHub</h1>
+                            <h1>Git</h1>
                             <p>I use Git for version control of my applications and GitHub to host the most recent version of the application
                                 that is viable.</p>
-                            <p>Website <a href="http://www.git-scm.com/">here</a>:</p>
+                            <p>Website <a href="http://www.git-scm.com/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex row p-3 bg-dark">
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-primary">
                         <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>Java</h1>
                             <p>I am very familiar with Java and all of its programming paradigms including Object-Oriented Programming, although I am yet to use it in any useful real-world project.</p>
-                            <p>Website <a href="http://www.java.com/">here</a>:</p>
+                            <p>Website <a href="http://www.java.com/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="col-md-6">
                     <div class="d-flex row p-3 bg-secondary">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>JavaScript</h1>
                             <p>In addition to HTML and CSS, I also use JavaScript for web front-end development and any lines of code that don't necessarily need to be written in the backend.</p>
-                            <p>Website <a href="http://www.javascript.com/">here</a>:</p>
+                            <p>Website <a href="http://www.javascript.com/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="col-md-6">
                     <div class="d-flex row p-3 bg-dark">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
@@ -151,26 +164,36 @@
                             <p>Python is my favourite and main programming language and I am extremely adaptable to using any technology that is compatible with it. I am always up to date with any
                                 updates and changes that are made to it. 
                             </p>
-                            <p>Website <a href="http://www.python.org/">here</a>:</p>
+                            <p>Website <a href="http://www.python.org/">here</a></p>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex row p-3 bg-secondary">
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-primary">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
                             <h1>React (pending)</h1>
-                            I am currently in the process of learning React for front-end web development.
+                            I am currently in the process of learning React for frontend web development to improve the performance of my web apps.
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="d-flex row p-3 bg-dark">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1200px-SQLite370.svg.png" class="logo my-auto col">
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-secondary">
+                        <img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
-                            <h1>SQLite (SQL)</h1>
+                            <h1>MySQL (SQL)</h1>
                             <p>As I often store application in SQL databases, it is important for me to understand how to use SQL to manage the database.</p>
-                            <p>Website <a href="http://www.sqlite.org/">here</a>:</p>
+                            <p>Website <a href="http://www.mysql.com/">here</a></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-md-6">
+                    <div class="d-flex row p-3 bg-dark">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" class="logo my-auto col">
+                        <div class="col w-25 my-auto">
+                            <h1>Node.js</h1>
+                            <p>I'm in the process of learning Node.js to improve the performance of my web apps.</p>
+                            <p>Website <a href="http://www.nodejs.org/">here</a></p>
                         </div>
                     </div>
                 </li>
@@ -179,10 +202,10 @@
             <h2>Research</h2>
             <ul class="stack-list">
                 <li>
-                    <div class="d-flex row p-3 bg-secondary">
+                    <div class="d-flex row p-3 bg-dark">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/768px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png" class="logo my-auto col">
                         <div class="col w-25 my-auto">
-                            <h1>Microsoft Office</h1>
+                            <h1>Office</h1>
                             <p>I am skilled at using Microsoft Word, Excel, and PowerPoint, and their open-source equivalents (i.e. Google Docs, LibreOffice). I use Microsoft Word for report writing and Excel for data analysis and visualization, and PowerPoint for presentations.</p>
                         </div>
                     </div>
