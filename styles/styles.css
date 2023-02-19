@@ -5,12 +5,23 @@ html, body {
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Righteous", sans-serif;
     margin: 0;
+    background-color: #3d0f6f;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: "Audiowide", cursive;
+    text-decoration: underline;
 }
 
 .stack-list img {
-    filter: drop-shadow(0px 10px 3px black);
+    filter: drop-shadow(0px 2px 0px black);
+}
+
+.stack-list div:hover {
+    background-color: gold;
 }
 
 .logo {
@@ -20,6 +31,8 @@ body {
 .stack-list {
     list-style: none;
     padding-left: 0;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .stack-list li div {
@@ -32,13 +45,72 @@ body {
 
 .profile-pic {
     height: 200px;
-    filter: drop-shadow(0px 0px 3px black);
+    filter: drop-shadow(0px 0px 20px #ffd319);
 }
 
 .contact-info p a {
     color: gold;
 }
 
-.bg-primary {
-    background-color: red;
+/* Colors */
+
+.color-1 {
+    background-color: #ffd319;  
+}
+
+.color-2 {
+    background-color: #ff901f;
+}
+
+.color-3 {
+    background-color: #ff2975;
+}
+
+.color-4 {
+    background-color: #f222ff;
+}
+
+.color-5 {
+    background-color: #8c1eff;
+}
+
+.color-6 {
+    background-color: #3d0f6f;
+}
+
+.text-color-1 {
+    color: #ffd319;
+}
+
+.text-color-3 {
+    color: #ff2975;
+}
+
+.text-color-4 {
+    color: #f222ff;
+}
+
+.text-color-6 {
+    color: #3d0f6f;
+}
+
+.education {
+    font-family: "Righteous", sans-serif;
+    text-decoration: none;
+}
+
+.shadow-text {
+    text-shadow: 0px 0px 10px gray;
+}
+
+.shadow-color-4 {
+    text-shadow: 0px 0px 10px #f222ff;
+}
+
+.shadow-color-3 {
+    text-shadow: 0px 0px 10px #ff2975;
+}
+
+.shadow-color-3 {
+    text-shadow: 0px 0px 10px #ff2975;
 }
