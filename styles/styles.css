@@ -37,9 +37,10 @@ main {
 }
 
 #header {
-    background-color: #662c36;
+    background-color: rgba(102, 44, 54, 0.7);
     color: #DEFEFF;
     box-shadow: inset 0px 5px 30px #861126;
+    text-shadow: 2px 2px 0px black;
 }
 
 .my-card-1 {
@@ -56,13 +57,10 @@ main {
     main {
         width: 75%;
         max-width: 100%;
-        margin: 50px;
-        border-radius: 45px;
-        padding: 15px;
+        padding: 0 15px;
     }
 
     .my-card{
-        border-radius: 45px;
         box-shadow: 0px 30px 0px rgba(42, 57, 77, 0.7);
         margin-bottom: 70px;
     }
@@ -72,7 +70,8 @@ main {
     }
 
     #header {
-        border: 15px solid #61383f;
+        border: 15px solid rgba(97, 56, 63, 0.7);
+        margin-bottom: 20px;
     }
 
     .my-card-1 {
@@ -99,7 +98,7 @@ h1, h2, h3 {
 }
 
 .stack-list img:hover {
-    filter: drop-shadow(0px 2px 4px #DEFEFF);
+    filter: drop-shadow(0px 2px 0px #DEFEFF);
     transition-duration: 0.2s;
 }
 
@@ -112,6 +111,7 @@ h1, h2, h3 {
     padding-left: 0;
     overflow: auto;
     white-space: nowrap;
+    border-radius: 100em;
 }
 
  /* Hide scrollbar for Chrome, Safari and Opera */
@@ -190,13 +190,13 @@ h1, h2, h3 {
 }
 
 .shadow-text {
-    text-shadow: 0px 0px 10px gray;
+    text-shadow: 0px 2px 0px gray;
 }
 
 .shadow-color-4 {
-    text-shadow: 0px 0px 10px #f222ff;
+    text-shadow: 0px 2px 0px #f222ff;
 }
 
 .shadow-color-3 {
-    text-shadow: 0px 0px 10px rgb(126, 148, 189);
+    text-shadow: 0px 2px 0px rgb(126, 148, 189);
 }
