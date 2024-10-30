@@ -1,309 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Rofhiwa Matumba - Portfolio Page</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Puritan&display=swap');
+        body {
+            background-color: #777;
+            color: #fff;
+            font-family: "Space Mono", monospace;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        .btn {
+            border-radius: 0px;
+            transition-duration: 0s;
+        }
+
+        .navs {
+            color: white;
+            text-shadow: 1px 1px 0px black;
+            border: none;
+        }
+
+        a[href="./tech.html"] {
+            background-color: gold;
+        }
+
+        a[href="./projects.html"] {
+            background-color: deeppink;
+        }
+
+        a[href="./playlists.html"] {
+            background-color: dodgerblue;
+        }
+
+        .background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./bkground.gif');
+            opacity: 0.5;
+            /* Adjust opacity */
+            z-index: -1;
+            /* Place it behind other content */
+        }
+
+        .content {
+            position: relative;
+            /* So content is above the GIF */
+            z-index: 1;
+            /* Ensure content is above GIF */
+            color: white;
+            /* Text colour for visibility */
+            text-align: center;
+            /* Center text */
+            padding: 20px;
+        }
     </style>
-    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="d-flex justify-content-center">
-    <main class="justify-content-center">
-        <div class="d-flex p-3 color-4 text-color-6 align-items-center my-card my-card-1 headline row" id="header">
-            <div class="container-fluid d-flex justify-content-center p-3 col-sm-6">
-                <img class="profile-pic rounded-circle" src="/images/me.png">
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <div class="background-gif"></div>
+    <div class="content">
+        <section id="contact" class="container text-center my-5">
+            <h1>Welcome!</h1>
+            <p>This is my personal site. It's still a work in progress, but you're more than welcome to take a look around! Click on any one of the buttons below to get started.</p>
+            <div id="buttons">
+                <a href="./tech.html" class="btn btn-light navs p-3">Tech Stack</a>
+                <a href="./projects.html" class="btn btn-light navs p-3">Projects</a>
+                <a href="./playlists.html" class="btn btn-light navs p-3">Playlists</a>
             </div>
-            <div class="container-fluid p-3 text-center col-sm-6">
-                <h1>Rofhiwa (Ralph) Matumba</h1>
-                <h2 style="font-variant: small-caps; color: rgb(211, 221, 240);">Computer Scientist</h2>
-                <h4>
-                    <blockquote>"Every great and deep difficulty bears in itself its own solution. It
-                        forces us to change our thinking in order to find it."<br> - Niels Bohr</blockquote>
-                </h4>
-            </div>
-        </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="container text-center my-5">
+            <h2>Contact Me</h2>
+            <p>Get in touch via email or LinkedIn.</p>
+            <a href="mailto:rofhima13@gmail.com" class="btn btn-primary">Email Me</a>
+            <a target="blank" href="https://www.linkedin.com/in/rofhima13" target="_blank" class="btn btn-light btn-outline-primary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </section>
+    </div>
 
-        <div class="container-fluid p-3 contact-info">
-            <p>Email: <a href="mailto:rofhima13@gmail.com">rofhima13@gmail.com</a></p>
-            <p>Cell: <a href="tel:+27 72 974 5676">+27 72 974 5676</a>
-            <p>
-            <p>LinkedIn: <a href="http://www.linkedin.com/in/rofhima13" target="_blank">@rofhima13</a></p>
-            <p>Instagram: <a href="http://instagram.com/rofhima13" target="_blank">@rofhima13</a></p>
-        </div>
-        <div class="color-4 text-color-6 p-3"><strong>This is my portfolio page. If you are viewing this page for any
-                recruitment purposes, you are welcome to <a class="text-color-6"
-                    href="https://drive.google.com/file/d/120YsEfIVsPmgHJmdSvEKmJYdlHIdmoFN/view?usp=sharing">download
-                    my summarised résumé as a PDF version with references here.</a></strong></div>
-        <div class="">
-            <div class="p-4">
-                <h1 class="shadow-color-3">About me</h1>
-                <p>I am a computer scientist who recently graduated with a BSc Computer
-                    Science degree at the University of the Western Cape, with physics as a second major. I am currently
-                    furthering my computer science studies at Stellenbosch University. I am extremely passionate about
-                    using
-                    technology to solve complex problems. I am currently
-                    pursuing advanced studies in the fields of artificial
-                    intelligence and data science to deepen my expertise in
-                    these areas, and I am open to studying or practicing physics should the opportunity arise to do so
-                    in future.
-                </p>
-                <p>
-                    I have a strong interest in computer programming, physics,
-                    and reading non-fiction books. I am either auditing an
-                    online course or scouring the Stack Exchange forums in my
-                    free time.
-                </p>
-            </div>
-            <div class="p-3 my-card my-card-2">
-                <h1 class="shadow-color-3">Skills</h1>
-                <ul>
-                    <li>Computer programming (detailed information below)</li>
-                    <li>Intermediate knowledge of classical (Newtonian) physics</li>
-                    <li>High performance computing with Linux</li>
-                    <li>Scientific report writing</li>
-                    <li>Basic knowledge of astronomy, quantum mechanics, and computational physics</li>
-                    <li>Comfortable using all major operating systems - Windows, macOS, Linux and all UNIX-based systems
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container-fluid p-3 my-card my-card-1">
-            <h1 class="shadow-color-3">Education</h1>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 
-            <div class="d-flex my-4">
-                <img class="uni-logo"
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/UWC_logo.svg/800px-UWC_logo.svg.png"
-                    height="100">
-                <h2 class="my-auto mx-4 col-md-9 education">BSc Computer Science | University of the Western Cape
-                    (January 2019 - December 2022)</h2>
-            </div>
-            <h3 class="shadow-color-3">Activity</h3>
-            <ul>
-                <li>Class representative | 2020 | Mathematics Extended Curriculum Programme</li>
-                <li>Social Media Manager | March 2021 - March 2022 | Mathematics Club</li>
-                <li>Co-Lead | July 2021 - July 2022 | Google Developer Student Clubs UWC</li>
-                <li>Member | 2022 - present | UWC Science Research Society</li>
-            </ul>
-            <h3 class="shadow-color-3">Accolades</h3>
-            <ul>
-                <li>CHPC Student Cluster Competition finalist (2020)</li>
-                <li>CHPC Student Cluster Competition winner (2021) <a
-                        href="https://eresearch.uwc.ac.za/2022/04/25/uwc-team-wins-cluster-challenge/?utm_source=rss&utm_medium=rss&utm_campaign=uwc-team-wins-cluster-challenge"
-                        target="_blank">[Source]</a></li>
-                <li>ISC Student Cluster Competition Participant (2022)</li>
-                <li>Google Solution Challenge Participant (2022)</li>
-            </ul>
-            <div class="d-flex my-4">
-                <img class="uni-logo" src="http://www.sun.ac.za/Style%20Library/SUN/Images/SUN_logo.png" height="100">
-                <h2 class="my-auto mx-4 education">BSc (Hons) Computer Science | Stellenbosch University (January 2023 -
-                    present)</h2>
-                </div>
-            <h3 class="shadow-color-3">Activity</h3>
-            <ul>
-                <li>Teaching assistant | 2023 - present | Scientific Computing II</li>
-                <li>Regular attendee | 2023 - present | NiTheCS Colloquium</li>
-            </ul>
-        </div>
-        <div class="container-fluid p-3">
-            <h1 class="shadow-color-3">Software and Tools</h1>
-            <h2 class="shadow-color-3">Operating System(s)</h2>
-            <ul class="stack-list d-flex">
-                <li title="Pop!_OS is my personal operating system for all development workloads." class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://pop.system76.com/icon-512.png" class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="This is nowadays my bootloader for video games, particularly Minecraft." class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Windows_11_logo.svg/2560px-Windows_11_logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-            </ul>
-            <p>The skills I practice(d) using the technologies listed below include but are not limited to:</p>
-            <ul>
-                <li>Data Structures and Algorithms*</li>
-                <li>Machine Learning*</li>
-                <li>Deep Learning*</li>
-                <li>Web Development</li>
-                <li>Computer Networking</li>
-                <li>Database Design</li>
-                <li>Software Engineering</li>
-                <li>Concurrent Programming*</li>
-                <small class="ps-3">* - These concepts were practiced at postgraduate level.</small>
-            </ul>
-            <p>All of these lists are non-exhaustive, and may grow over time as I am exposed to more skills and
-                learn different languages, skills and frameworks.</p>
-            <h2 class="shadow-color-3">Development</h2>
-            <p>These languages are sorted in no particular order. Hover over each language/framework to learn more about
-                the context I used them in (Desktop).</p>
-            <h3 class="shadow-color-3">Languages</h3>
-            <ul class="stack-list d-flex my-card my-card-2">
-                <li title="C: I used this language in mainly low-level applications, particularly in the context of operating systems, and concurrent/parallel programming with OpenMP and MPI. However, I'm yet to find good use for it outside the classroom."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Java: I used this language in object-oriented applications and data structures, and is my language of choice for implementing data structures."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="JavaScript: I have a basic understanfing of the language, enough to get by for building basic dynamic web pages."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Python: This is my primary language and I have used it in several contexts. I mainly use it these days for artificial intelligence workflows, including, but not limited to machine learning and data science."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
-                            class="logo my-auto col">
-
-                    </div>
-                </li>
-                <li title="SQL: I have used this for basic database management problems. I have not used it explicitly outside the classroom as yet."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-            </ul>
-
-            <h3 class="shadow-color-3">Tools & Frameworks</h3>
-            <ul class="stack-list d-flex my-card my-card-2">
-                <li title="Anaconda (Python): This was my distribution of choice for handling Python data science packages. I now just use Python virtual environments."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://assets-global.website-files.com/625675d200672ae1d1c57482/6274fe5247f2428d132d6806_6273e496da4fa6ddf86864b2_logo-anaconda-372x372-1.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Django (Python): This is my framework of choice for developing web applications with a heavy emphasis on relational databases. As of June 2023, I am slightly out of practice."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.svg"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Dash (Python): This is my framework of choice for developing web-based frontends that require visualising data. I have more recently been using this framework for web development."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Plotly-logo.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Bootstrap (HTML/Python): My go-to framework for styling responsive web pages (including this one!). Often used in conjunction with Django and Dash."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Git: For version control, often used with GitHub or GitLab." class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="OpenMP (C): Used for writing parallel C programs." class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/OpenMP_logo.png/1200px-OpenMP_logo.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="MPI (Linux/C): I have used MPI, specifically OpenMPI, in two distinct contexts. One involved running high-performance computing (HPC) software on supercomputers within a competitive environment, while the other involved developing my own MPI programs in C. Both experiences have given rise to sleepless nights, and I found them both to be immensely captivating."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Open_MPI_logo.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Jupyter (Python): I use Jupyter in several contexts, but almost exclusively for AI and data science workflows in notebooks. I often use JupyterLab to remotely connect to university hardware that offers computational power beyond my reach."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="Keras (Python): This is my preferred framework for implementing deep learning architectures, mainly for its more lenient learning curve (compared to PyTorch), stability and compact size."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1200px-Keras_logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="TensorFlow (Python): TensorFlow comes with many useful functions that are compatible with Keras to bridge compatibility with other Python modules."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1915px-Tensorflow_logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-            </ul>
-            <h3 class="shadow-color-3">Editors</h3>
-            <ul class="stack-list d-flex my-card my-card-2">
-                <li title="VS Code: I consider this to be the programmer's Swiss army knife. I use this as my primary text editor."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="TeXstudio: I only use this for LaTeX workflows, as I find them cumbersome in VS Code. TeXstudio offers me the most stable typesetting experience."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/TeXstudio_Logo.svg/2048px-TeXstudio_Logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="IntelliJ IDEA: Used exclusively for writing Java code. It offers an unparalleled Java programming experience in my opinion."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1200px-IntelliJ_IDEA_Icon.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-            </ul>
-            <hr>
-            <h2 class="shadow-color-3">Research</h2>
-            <p>Herein are the various tools I use to conduct my research.</p>
-            <h3 class="shadow-color-3">Typesetting</h3>
-            <ul class="stack-list d-flex my-card my-card-2">
-                <li title="MS 365/Google Docs/LibreOffice: This was my typesetter of choice until I switched to LaTeX. I still use Excel/Sheets/Calc for small to medium-sized data workloads."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/768px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-                <li title="LaTeX: My current typesetter of choice. Saves the effort of having to switch applications between writing code and reports."
-                    class="col">
-                    <div class="d-flex p-3 justify-content-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/2560px-LaTeX_logo.svg.png"
-                            class="logo my-auto col">
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </main>
 </body>
 
 </html>

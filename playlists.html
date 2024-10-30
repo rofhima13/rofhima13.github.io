@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <style>
+            body {
+                background-color: #777;
+                color: #fff;
+                font-family: "Space Mono", monospace;
+                margin: 0;
+            }
+    
+            h1 {
+                font-size: 80px;
+            }
+    
+            .btn {
+                border-radius: 0px;
+                transition-duration: 0s;
+            }
+    
+            .navs {
+                color: white;
+                text-shadow: 1px 1px 0px black;
+                border: none;
+            }
+    
+            a[href="./tech.html"] {
+                background-color: gold;
+            }
+    
+            a[href="./projects.html"] {
+                background-color: deeppink;
+            }
+    
+            a[href="./playlists.html"] {
+                background-color: dodgerblue;
+            }
+    
+            .background-gif {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('./bkground.gif');
+                opacity: 0.5;
+                /* Adjust opacity */
+                z-index: -1;
+                /* Place it behind other content */
+            }
+    
+            .content {
+                position: relative;
+                /* So content is above the GIF */
+                z-index: 1;
+                /* Ensure content is above GIF */
+                color: white;
+                /* Text colour for visibility */
+                text-align: center;
+                /* Center text */
+                padding: 20px;
+            }
+            .playlist {
+                padding: 20px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .playlist img {
+                width: 200px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 3px black;
+                transition-duration: 0.2s;
+            }
+
+            .playlist img:hover {
+                width: 210px;
+                transition-duration: 0.2s;
+            }
+
+            .playlist:hover {
+                color: greenyellow;
+            }
+        </style>
+</head>
+<body>
+    <a style="position: fixed;" href='index.html' class="btn btn-warning">Back to Home</a>
+    <div class="background-gif"></div>
+    <div class="d-flex align-items-center justify-content-center vh-100">
+        <section id="playlists" class="container text-center my-5 content">
+            <h2>Playlists</h2>
+            <div class="row justify-content-center">
+                <a target="blank" href="https://open.spotify.com/playlist/00xOyQfyUixMnuucFGLd9x?si=4d70a9247bed4d3d" class="col-md-4 playlist">
+                    <img src="./playlists/dance.png">
+                    <h3>The Invincible Dance Essentials</h3>
+                </a>
+                <a target="blank" href="https://open.spotify.com/playlist/2bRIdRyGsmfAeC6bUNPTAE?si=3c047edee4a14679" class="col-md-4 playlist">
+                    <img src="./playlists/disco.png">
+                    <h3>The Invincible Disco Essentials</h3>
+                </a>
+                <a target="blank" href="https://open.spotify.com/playlist/5vwfsWMwiGkDhI9p4ekiZz?si=cd91670f512a4716" class="col-md-4 playlist">
+                    <img src="./playlists/rock.png">
+                    <h3>The Invincible Rock Essentials</h3>
+                </a>
+                <a target="blank" href="https://open.spotify.com/playlist/6yBAc6AIYSHdNIzzhMzaCC?si=3032db7fef374bf5" class="col-md-4 playlist">
+                    <img src="./playlists/soul.png">
+                    <h3>The Invincible Soul Essentials</h3>
+                </a>
+                <a target="blank" href="https://open.spotify.com/playlist/45jZQvhx4AHObGGQILwZ08?si=6734f4fc3cf34f8c" class="col-md-4 playlist">
+                    <img src="./playlists/synthpop.png">
+                    <h3>The Invincible Synthpop Essentials</h3>
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

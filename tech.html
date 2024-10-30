@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #777;
+            color: #fff;
+            font-family: "Space Mono", monospace;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        .btn {
+            border-radius: 0px;
+            transition-duration: 0s;
+        }
+
+        .navs {
+            color: white;
+            text-shadow: 1px 1px 0px black;
+            border: none;
+        }
+
+        a[href="./tech.html"] {
+            background-color: gold;
+        }
+
+        a[href="./projects.html"] {
+            background-color: deeppink;
+        }
+
+        a[href="./playlists.html"] {
+            background-color: dodgerblue;
+        }
+
+        .background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./bkground.gif');
+            opacity: 0.5;
+            /* Adjust opacity */
+            z-index: -1;
+            /* Place it behind other content */
+        }
+
+        .content {
+            position: relative;
+            /* So content is above the GIF */
+            z-index: 1;
+            /* Ensure content is above GIF */
+            color: white;
+            /* Text colour for visibility */
+            text-align: center;
+            /* Center text */
+            padding: 20px;
+        }
+
+        #skills-gallery * {
+            background-color: #333;
+            border-radius: 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a style="position: fixed;" href='index.html' class="btn btn-warning">Back to Home</a>
+    <div class="background-gif"></div>
+    <section id="skills-gallery" class="container text-center my-5 content">
+        <h2>Programming Languages</h2>
+        <p>A list of programming languages I use, or have used at some point.</p>
+        <div class="scrolling-gallery row d-flex justify-content-center">
+            <!-- Python Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="70px" height="70px" alt="Python logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Python" data-description="Python is a high-level, general-purpose programming language known for its readability and versatility.">
+                <p class="mt-2">Python</p>
+            </div>
+            
+            <!-- JavaScript Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="70px" height="70px" alt="JavaScript logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="JavaScript" data-description="JavaScript is a versatile scripting language mainly used for web development.">
+                <p class="mt-2">JavaScript</p>
+            </div>
+            
+            <!-- Java Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="70px" height="70px" alt="Java logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Java" data-description="Java is a powerful, platform-independent language commonly used in enterprise applications.">
+                <p class="mt-2">Java</p>
+            </div>
+            
+            <!-- C Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" width="70px" height="70px" alt="C logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="C" data-description="C is a general-purpose language often used in system programming.">
+                <p class="mt-2">C</p>
+            </div>
+            
+            <!-- C# Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="70px" height="70px" alt="C# logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="C#" data-description="C# is a modern, object-oriented language developed by Microsoft for a variety of applications.">
+                <p class="mt-2">C#</p>
+            </div>
+            
+            <!-- Kotlin Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" width="70px" height="70px" alt="Kotlin logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Kotlin" data-description="Kotlin is used mainly for Android development and interoperates with Java.">
+                <p class="mt-2">Kotlin</p>
+            </div>
+            
+            <!-- TypeScript Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="70px" height="70px" alt="TypeScript logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="TypeScript" data-description="TypeScript is a typed superset of JavaScript designed for larger applications.">
+                <p class="mt-2">TypeScript</p>
+            </div>
+            
+            <!-- Bash Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" width="70px" height="70px" alt="Bash logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Bash" data-description="Bash is a Unix shell and command language widely used in scripting.">
+                <p class="mt-2">Bash</p>
+            </div>
+            
+            <!-- PowerShell Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" width="70px" height="70px" alt="PowerShell logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="PowerShell" data-description="PowerShell is a task automation framework by Microsoft, mainly used for system administration.">
+                <p class="mt-2">PowerShell</p>
+            </div>
+            
+            <!-- Dart Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" width="70px" height="70px" alt="Dart logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Dart" data-description="Dart is a programming language by Google, often used for building mobile apps with Flutter.">
+                <p class="mt-2">Dart</p>
+            </div>
+            
+            <!-- MySQL Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="70px" height="70px" alt="MySQL logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="MySQL" data-description="MySQL is a popular relational database management system.">
+                <p class="mt-2">MySQL</p>
+            </div>
+            
+            <!-- PostgreSQL Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="70px" height="70px" alt="PostgreSQL logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="PostgreSQL" data-description="PostgreSQL is a powerful, open-source relational database.">
+                <p class="mt-2">PostgreSQL</p>
+            </div>
+            
+            <!-- SQLite Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" width="70px" height="70px" alt="SQLite logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="SQLite" data-description="SQLite is a lightweight, serverless database engine.">
+                <p class="mt-2">SQLite</p>
+            </div>
+            
+            <!-- Sass Logo and Text -->
+            <div class="col-3 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" width="70px" height="70px" alt="Sass logo" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Sass" data-description="Sass is a preprocessor scripting language for CSS.">
+                <p class="mt-2">Sass</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="skills-gallery" class="container text-center my-5">
+        <h2>Tools and Platforms</h2>
+        <p>A list of frameworks I use, or have used at some point.</p>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg" width="70px" height="70px" alt="Anaconda" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Anaconda" data-description="A distribution of Python and R for scientific computing and data science.">
+                <p class="'mt-2">Anaconda</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="70px" height="70px" alt="Git" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Git" data-description="A version control system to track changes in source code.">
+                <p class="'mt-2">Git</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" width="70px" height="70px" alt="Docker" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Docker" data-description="A tool to create and manage containers for application development.">
+                <p class="'mt-2">Docker</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" width="70px" height="70px" alt="Microsoft Azure" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Microsoft Azure" data-description="Microsoft's cloud platform for deploying and managing applications.">
+                <p class="'mt-2">Microsoft Azure</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gcc/gcc-original.svg" width="70px" height="70px" alt="GCC" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="GCC" data-description="The GNU Compiler Collection used to compile C, C++, and other languages.">
+                <p class="'mt-2">GCC</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="70px" height="70px" alt="GitHub" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="GitHub" data-description="A platform for hosting and managing Git repositories.">
+                <p class="'mt-2">GitHub</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" width="70px" height="70px" alt="GitLab" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="GitLab" data-description="A platform for managing Git repositories with CI/CD capabilities.">
+                <p class="'mt-2">GitLab</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" width="70px" height="70px" alt="Jenkins" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Jenkins" data-description="An automation server for building, testing, and deploying applications.">
+                <p class="'mt-2">Jenkins</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" width="70px" height="70px" alt="Jira" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Jira" data-description="A project management tool for tracking tasks and managing projects.">
+                <p class="'mt-2">Jira</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" width="70px" height="70px" alt="JUnit" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="JUnit" data-description="A unit testing framework for Java programming.">
+                <p class="'mt-2">JUnit</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kaggle/kaggle-original.svg" width="70px" height="70px" alt="Kaggle" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Kaggle" data-description="An online community of data scientists and machine learning practitioners.">
+                <p class="'mt-2">Kaggle</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nano/nano-original.svg" width="70px" height="70px" alt="Nano" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Nano" data-description="A command-line text editor.">
+                <p class="'mt-2">Nano</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="70px" height="70px" alt="Node.js" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Node.js" data-description="A JavaScript runtime built on Chrome's V8 JavaScript engine.">
+                <p class="'mt-2">Node.js</p>
+            </div>
+        </div>
+    </section>    
+    
+
+    <section id="skills-gallery" class="container text-center my-5">
+        <h2>Markup, Typing and Design</h2>
+        <p>A list of frameworks I use, or have used at some point.</p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="70px" height="70px" alt="HTML5" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="HTML5" data-description="A markup language for creating web pages.">
+                <p class="'mt-2">HTML5</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="70px" height="70px" alt="CSS3" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="CSS3" data-description="A style sheet language used for describing the presentation of a document written in HTML.">
+                <p class="'mt-2">CSS3</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg" width="70px" height="70px" alt="LaTeX" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="LaTeX" data-description="A typesetting system commonly used for academic and scientific documents.">
+                <p class="'mt-2">LaTeX</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" width="70px" height="70px" alt="Canva" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Canva" data-description="A graphic design platform used for creating social media graphics, presentations, posters, and more.">
+                <p class="'mt-2">Canva</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="70px" height="70px" alt="Figma" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Figma" data-description="A web-based app for UI/UX design and prototyping.">
+                <p class="'mt-2">Figma</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" width="70px" height="70px" alt="GIMP" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="GIMP" data-description="A free and open-source image editor used for tasks such as photo retouching, image editing, and image composition.">
+                <p class="'mt-2">GIMP</p>
+            </div>
+            <div class="col-6 col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" width="70px" height="70px" alt="Markdown" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Markdown" data-description="A lightweight markup language with plain-text formatting syntax for creating formatted text.">
+                <p class="'mt-2">Markdown</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-gallery" class="container text-center my-5">
+        <h2>Software</h2>
+        <p>A list of frameworks I use, or have used at some point.</p>
+        <div class="row">
+            <div class="col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="70px" height="70px" alt="Visual Studio Code" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Visual Studio Code" data-description="A powerful code editor with support for numerous programming languages.">
+                <p class="'mt-2">VS Code</p>
+            </div>
+            <div class="col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firefox/firefox-original.svg" width="70px" height="70px" alt="Mozilla Firefox" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Mozilla Firefox" data-description="A popular open-source web browser known for its privacy features.">
+                <p class="'mt-2">Firefox</p>
+            </div>
+            <div class="col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" width="70px" height="70px" alt="JetBrains" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="JetBrains" data-description="A suite of IDEs for various programming languages and frameworks.">
+                <p class="'mt-2">JetBrains</p>
+            </div>
+            <div class="col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" width="70px" height="70px" alt="Jupyter" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Jupyter" data-description="An open-source web application for creating and sharing documents that contain live code, equations, and visualisations.">
+                <p class="'mt-2">Jupyter</p>
+            </div>
+            <div class="col-md-2 gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/69/FL_Studio_11_just_logo.png" width="70px" height="70px" alt="FL Studio" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="FL Studio" data-description="A digital audio workstation used for music production and composition.">
+                <p class="'mt-2">FL Studio</p>
+            </div>
+            <div class="col-md-2 gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="70px" height="70px" alt="Git" class="language-logo" data-toggle="modal" data-target="#languageModal" data-title="Git" data-description="A version control system for tracking changes in source code during software development.">
+                <p class="'mt-2">Git</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

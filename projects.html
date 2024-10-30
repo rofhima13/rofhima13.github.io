@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #777;
+            color: #fff;
+            font-family: "Space Mono", monospace;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+
+        .btn {
+            border-radius: 0px;
+            transition-duration: 0s;
+        }
+
+        .navs {
+            color: white;
+            text-shadow: 1px 1px 0px black;
+            border: none;
+        }
+
+        a[href="./tech.html"] {
+            background-color: gold;
+        }
+
+        a[href="./projects.html"] {
+            background-color: deeppink;
+        }
+
+        a[href="./playlists.html"] {
+            background-color: dodgerblue;
+        }
+
+        .background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./bkground.gif');
+            opacity: 0.5;
+            /* Adjust opacity */
+            z-index: -1;
+            /* Place it behind other content */
+        }
+
+        .content {
+            position: relative;
+            /* So content is above the GIF */
+            z-index: 1;
+            /* Ensure content is above GIF */
+            color: white;
+            /* Text colour for visibility */
+            text-align: center;
+            /* Center text */
+            padding: 20px;
+        }
+
+        .row {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <a style="position: fixed;" href='index.html' class="btn btn-warning">Back to Home</a>
+    <div class="background-gif"></div>
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <!-- <img src="project1.jpg" class="card-img-top" alt="Kerasene"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">When is my birthday on this day?</h5>
+                        <p class="card-text">This web program lets you know when is the next time you will be having your birthday on a specific day. Source is available <a href="https://github.com/rofhima13/wimbotd">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <!-- <img src="project1.jpg" class="card-img-top" alt="Kerasene"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Kerasene</h5>
+                        <p class="card-text">This will be a web-based user interface for the Keras deep learning API. It
+                            is designed to serve as the first libre graphical API for Keras and its backends.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <!-- <img src="project1.jpg" class="card-img-top" alt="Kerasene"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Machine Learning for Financial Forecasting (in partnership with NITheCS)</h5>
+                        <p class="card-text">This project focuses on using machine learning algorithms on financial time
+                            series data for forecasting stock prices and investigating the performance of different
+                            machine learning techniques, such as linear regression, support vector machines, gradient
+                            boosting models, and neural networks in financial prediction tasks. My article on this is available <a
+                                target="blank" href="https://drive.google.com/file/d/1MxrW6u6_IR0lLnEh9u3n89SVDurEcllC/view?usp=sharing">here</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
