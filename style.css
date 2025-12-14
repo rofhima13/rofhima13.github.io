@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --bg: #fefcff;
+    --text: #1c0026;
+    --muted: #555555;
+    --accent: #0d6efd; /* bootstrap primary */
+    --container-bg: transparent;
+}
+
+/* Dark theme variables */
+.dark {
+    --bg: #1c0026;
+    --text: #e7e6e7;
+    --muted: #cfcfcf;
+    --accent: #66a3ff;
+    --container-bg: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background .25s ease, color .25s ease;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+.container {
+    background: var(--container-bg);
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+h1, h2 {
+    color: var(--text);
+}
+
+a { color: var(--text); }
+
+a:hover { color: var(--muted); }
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.theme-toggle button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem .65rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.theme-toggle button:focus {
+    outline: 3px solid rgba(13,110,253,0.18);
+    outline-offset: 2px;
+}
+
+.theme-toggle button[aria-pressed="true"] {
+    background: rgba(13,110,253,0.06);
+    border-color: rgba(13,110,253,0.18);
+}
+
+.dark .theme-toggle button {
+    border-color: rgba(255,255,255,0.08);
+}
+
+
+
+

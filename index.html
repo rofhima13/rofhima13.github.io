@@ -1,110 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome! - Rofhiwa Matumba (Ralph)</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Rofhiwa (Ralph) Matumba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #333;
-            color: #fff;
-            font-family: "Space Mono", monospace;
-            margin: 0;
-        }
-
-        h1 {
-            font-size: 80px;
-        }
-
-        .btn {
-            border-radius: 0px;
-            transition-duration: 0s;
-        }
-
-        .navs {
-            color: white;
-            text-shadow: 1px 1px 0px black;
-            border: none;
-        }
-
-        a[href="./tech.html"] {
-            background-color: gold;
-        }
-
-        a[href="./projects.html"] {
-            background-color: deeppink;
-        }
-
-        a[href="./playlists.html"] {
-            background-color: dodgerblue;
-        }
-
-        .background-gif {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('./bkground.gif');
-            opacity: 0.25;
-            /* Adjust opacity */
-            z-index: -1;
-            /* Place it behind other content */
-        }
-
-        .content {
-            position: relative;
-            /* So content is above the GIF */
-            z-index: 1;
-            /* Ensure content is above GIF */
-            color: white;
-            /* Text colour for visibility */
-            text-align: center;
-            /* Center text */
-            padding: 20px;
-        }
-    </style>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
 </head>
-
-<body class="d-flex align-items-center justify-content-center vh-100">
-    <div class="background-gif"></div>
-    <div class="content">
-        <section id="contact" class="container text-center my-5">
-            <h1>Welcome!</h1>
-            <p>This is my personal site. It's still a work in progress, but you're more than welcome to take a look around! Click on any one of the buttons below to get started.</p>
-            <div id="buttons">
-                <a href="./tech.html" class="btn btn-light navs p-3">Tech Stack</a>
-                <a href="./projects.html" class="btn btn-light navs p-3">Projects</a>
-                <!-- <a href="./playlists.html" class="btn btn-light navs p-3">Playlists</a> -->
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="container text-center my-5">
-            <h2>Contact Me</h2>
-            <p>Get in touch via email or LinkedIn.</p>
-            <a href="mailto:rofhima13@gmail.com" class="btn btn-primary">Email Me</a>
-            <a target="blank" href="https://www.linkedin.com/in/rofhima13" target="_blank" class="btn btn-light btn-outline-primary">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-        </section>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <span id="theme-icon" aria-hidden="true">light</span>
+            <span class="visually-hidden">Toggle dark mode</span>
+        </button>
     </div>
+    <div class="container d-flex flex-column mt-5">
+        <h1>Rofhiwa (Ralph) Matumba</h1>
+        <p> Rofhiwa (Ralph) Matumba is a computer scientist and Master's student at Stellenbosch University.</p>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <p>Ralph is also self-employed as a music producer.</p>
+
+        <h2>Software Projects</h2>
+        <ul>
+            <li><a href="https://github.com/rofhima13/birthdayhijinks">Birthday Hijinks</a> (React, JavaScript)</li>
+            <li><a href="https://github.com/Phynance-NITheCS/source-code">Machine Learning for Financial Forecasting, with NITheCS</a> <a href="https://drive.google.com/file/d/1MxrW6u6_IR0lLnEh9u3n89SVDurEcllC/view?usp=sharing">[Article]</a> (Python)</li>
+            <li><a href="https://github.com/rofhima13/bench_On">Laptop benchmarking using an algorithm of O(n) and Ω(1) time and space complexity</a> (C, Excel)</li>
+        </ul>
+    </div>
     <script src="script.js"></script>
-
 </body>
-
 </html>
