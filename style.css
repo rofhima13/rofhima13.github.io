@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
-    --bg: #fefcff;
-    --text: #1c0026;
+    --bg: #fde5ff;
+    --text: #14051a;
     --muted: #555555;
     --accent: #0d6efd; /* bootstrap primary */
     --container-bg: transparent;
+    --text-shadow: rgba(63, 0, 78, 0.2);
+    --bkground: url("asfalt-dark.png")
 }
 
 /* Dark theme variables */
 .dark {
-    --bg: #1c0026;
+    --bg: #14051a;
     --text: #e7e6e7;
     --muted: #cfcfcf;
     --accent: #66a3ff;
     --container-bg: transparent;
+    --text-shadow: rgba(0, 0, 0, 0.8);
+    --bkground: url("asfalt-light.png")
 }
 
 * {
@@ -30,11 +34,14 @@ html, body {
 
 body {
     font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px var(--text-shadow);
+    background-image: var(--bkground);
+    back
 }
 
 p {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .container {
@@ -45,6 +52,7 @@ p {
 
 h1, h2 {
     color: var(--text);
+    font-size: 2rem;
 }
 
 a { color: var(--text); }
